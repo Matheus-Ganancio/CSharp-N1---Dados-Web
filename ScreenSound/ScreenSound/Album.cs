@@ -19,9 +19,12 @@
         foreach (var music in musics)
         {
             Console.WriteLine($"Music: {music.Name}");
+            Console.WriteLine($"music.Artist");
             Console.WriteLine($"Type of music: {music.Type}");
+            Console.WriteLine($"Music length: {music.Length}");
+
         }
-        Console.WriteLine($"\n to listen this album {totalLength} you " +
-            $"need to be a premium user");
+        Console.WriteLine($"\n To listen this album {totalLength} you " +
+            $"need to be a premium user\n");
     }
 }
