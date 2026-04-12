@@ -1,10 +1,16 @@
 ﻿class Album
 {
+    
     // puxando as informações de "Music.cs" para esse arquivo para poder
     // usar as informações da musica no album
     private List<Music> musics = new List<Music>();
 
-    public string Name { get; set; }
+    public Album(string name)
+    {
+        Name = name;
+    }
+
+    public string Name { get; }
     public int totalLength => musics.Sum(m => m.Length);
 
 

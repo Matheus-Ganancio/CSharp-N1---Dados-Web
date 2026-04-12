@@ -23,29 +23,36 @@
 
 using System.Text.RegularExpressions;
 
-Group slipknot = new Group();
-slipknot.Name = "Slipknot";
+Group slipknot = new Group("Slipknot");
 
 
-Album albumSlipknot = new Album();
-albumSlipknot.Name = "All Hope Is Gone";
+Album albumSlipknot = new Album("All Hope Is Gone");
+// albumSlipknot.Name = "All Hope Is Gone";
 
-Music music1 = new Music(slipknot);
-music1.Name = "Psychosocial";
-music1.Type = "Rock";
-music1.Length = 302;
+Music music1 = new Music(slipknot, "Psychosocial")
+{
+    Length = 302,
+    Disponible = true,
+};
+// music1.Name = "Psychosocial";
+// music1.Type = "Rock";
+// music1.Length = 302;
 
-Music music2 = new Music(slipknot);
-music2.Name = "Dead Memories";
-music2.Type = "Rock";
-music2.Length = 294;
+Music music2 = new Music(slipknot, "Dead Memories")
+{
+    Length = 294,
+    Disponible = false,
+};
+// music2.Name = "Dead Memories";
+// music2.Type = "Rock";
+// music2.Length = 294;
 
 albumSlipknot.AddMusic(music1);
 albumSlipknot.AddMusic(music2);
-
-
 slipknot.AddAlbum(albumSlipknot);
 
+music1.ShowTechinicalsSpecifications();
+music2.ShowTechinicalsSpecifications();
 albumSlipknot.ShowAlbumMusic();
 slipknot.Showdiscography();
                           

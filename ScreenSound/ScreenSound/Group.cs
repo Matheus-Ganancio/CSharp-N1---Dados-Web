@@ -1,7 +1,12 @@
 ﻿class Group
 {
     private List<Album> albums = new List<Album>();
-    public string Name { get; set; }
+
+    public Group(string name)
+    {
+        Name = name;
+    }
+    public string Name { get; }
     
     public void AddAlbum(Album album)
     {
