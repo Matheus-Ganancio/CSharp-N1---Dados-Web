@@ -1,7 +1,18 @@
 ﻿class Music
 {
+    // Construtor com parametro
+    // Construtor nao tem void, nao tem retorno.
+    // Construtor tem o nome/tipo
+    public Music(Group artist)
+    {
+        Artist = artist;
+    }
+
+    // metodo de atribuicao get e set.
+    // get usa a informacao ja salva
+    // set permite escrever uma atribuicao a aquele valor
     public string Name {  get; set; }
-    public string Artist { get; set; }
+    public Group Artist { get; }
     public int Length { get; set; }
     public bool Disponible {  get; set; }
     public string Type { get; set; }

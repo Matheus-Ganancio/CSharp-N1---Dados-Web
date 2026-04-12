@@ -20,18 +20,22 @@
 //music2.ShowTechinicalsSpecifications();
 
 
+
 using System.Text.RegularExpressions;
+
+Group slipknot = new Group();
+slipknot.Name = "Slipknot";
+
 
 Album albumSlipknot = new Album();
 albumSlipknot.Name = "All Hope Is Gone";
 
-Music music1 = new Music();
+Music music1 = new Music(slipknot);
 music1.Name = "Psychosocial";
 music1.Type = "Rock";
 music1.Length = 302;
-music1.Artist = "Taylor Swift";
 
-Music music2 = new Music();
+Music music2 = new Music(slipknot);
 music2.Name = "Dead Memories";
 music2.Type = "Rock";
 music2.Length = 294;
@@ -39,11 +43,9 @@ music2.Length = 294;
 albumSlipknot.AddMusic(music1);
 albumSlipknot.AddMusic(music2);
 
-Group slipknot = new Group();
-slipknot.Name = "Slipknot";
+
 slipknot.AddAlbum(albumSlipknot);
 
 albumSlipknot.ShowAlbumMusic();
-
 slipknot.Showdiscography();
                           
