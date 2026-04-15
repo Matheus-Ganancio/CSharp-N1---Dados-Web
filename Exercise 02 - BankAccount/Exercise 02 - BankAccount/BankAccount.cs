@@ -7,6 +7,16 @@
     //public double CreditCardLimit;
     //public bool haveCreditCard;
 
+    public bankAccount (string accountName, string password,
+        float accountNumber, double balance, double creditCardLimit)
+    {
+        AccountName = accountName;
+        Password = password;
+        AccountNumber = accountNumber;
+        Balance = balance;
+        CreditCardLimit = creditCardLimit;
+    }
+
     public string AccountName { get; set; }
     public string Password { get; set; }
     public float AccountNumber { get; set; }

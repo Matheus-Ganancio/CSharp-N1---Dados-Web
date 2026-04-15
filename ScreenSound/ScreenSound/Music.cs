@@ -18,7 +18,7 @@
     public bool Disponible {  get; set; }
     public string Type { get; set; }
     public string Description =>
-        $"The music {Name} are from {Artist}";
+        $"The music {Name} are from {Artist.Name}";
 
 
 

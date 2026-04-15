@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Exercise 02 - BankAccount.csproj" />
   </ItemGroup>
 
 </Project>

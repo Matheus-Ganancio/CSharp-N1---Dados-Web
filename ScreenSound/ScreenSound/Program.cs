@@ -21,10 +21,9 @@
 
 
 
-using System.Text.RegularExpressions;
+// using System.Text.RegularExpressions;
 
 Group slipknot = new Group("Slipknot");
-
 
 Album albumSlipknot = new Album("All Hope Is Gone");
 // albumSlipknot.Name = "All Hope Is Gone";
@@ -34,6 +33,14 @@ Music music1 = new Music(slipknot, "Psychosocial")
     Length = 302,
     Disponible = true,
 };
+
+MusicPlayer music1_Player = new MusicPlayer()
+{
+    Volume = 50,
+    CurrentTrackIndex = 0,
+    IsPlaying = true,
+};
+
 // music1.Name = "Psychosocial";
 // music1.Type = "Rock";
 // music1.Length = 302;
@@ -52,7 +59,11 @@ albumSlipknot.AddMusic(music2);
 slipknot.AddAlbum(albumSlipknot);
 
 music1.ShowTechinicalsSpecifications();
+music1_Player.MusicPlayerInfo();
 music2.ShowTechinicalsSpecifications();
 albumSlipknot.ShowAlbumMusic();
 slipknot.Showdiscography();
+
+Console.WriteLine("\nPressione qualquer tecla para encerrar...");
+Console.ReadKey();
                           
