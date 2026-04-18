@@ -34,7 +34,7 @@ Music music1 = new Music(slipknot, "Psychosocial")
     Disponible = true,
 };
 
-MusicPlayer music1_Player = new MusicPlayer()
+MusicPlayer_Exercise2 music1_Player = new MusicPlayer()
 {
     Volume = 50,
     CurrentTrackIndex = 0,

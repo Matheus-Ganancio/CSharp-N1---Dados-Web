@@ -1,4 +1,4 @@
-﻿public class MusicPlayer
+﻿public class MusicPlayer_Exercise2
 {
     public int Volume { get; set; }
     public int CurrentTrackIndex { get; set; }
